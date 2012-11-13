@@ -20,6 +20,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'activeadmin', :git => 'git@github.com:mjacobus/active_admin.git'
+gem "breadcrumb",  :git => 'git@github.com:mjacobus/Breadcrumb.git'
+gem "simple_menu", :git => 'git@github.com:mjacobus/simple_menu.git'
+# gem 'validates_email_format_of', :git => 'git://github.com/mjacobus/validates_email_format_of.git'
+
 gem 'jquery-rails'
 gem 'thin'
 gem 'high_voltage'
