@@ -21,6 +21,37 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'thin'
+gem 'high_voltage'
+gem 'paperclip'
+gem 'formtastic'
+gem 'flutie'
+gem 'bourbon'
+gem 'airbrake'
+
+group :development do
+  gem 'foreman'
+end
+
+group :development, :test do
+  gem 'guard'
+  gem 'guard-spork'
+  gem 'rspec-rails'
+  gem 'sham_rack'
+end
+
+group :test do
+  gem 'capybara'
+  # gem 'capybara-webkit'
+  gem 'factory_girl_rails'
+  gem 'bourne'
+  gem 'database_cleaner'
+  gem 'timecop'
+  gem 'shoulda-matchers'
+  gem 'launchy'
+  gem 'simplecov', require: false
+end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
