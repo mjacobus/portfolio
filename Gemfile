@@ -35,7 +35,7 @@ end
 
 group :development, :test do
   gem 'guard'
-  gem 'guard-spork'
+  # gem 'guard-spork'
   gem 'rspec-rails'
   gem 'sham_rack'
 end
