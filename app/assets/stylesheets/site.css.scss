@@ -8,6 +8,10 @@ body {
   line-height: 20px;
 }
 
+a {
+  color: #03406A;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Ubuntu',sans-serif;
   color: #03406A;
@@ -22,6 +26,15 @@ h1 {
   font-weight: 700;
   letter-spacing: -2px;
   line-height: 36px;
+  text-shadow: 0 0 2px #CCCCCC;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 23px;
   text-shadow: 0 0 2px #CCCCCC;
   margin-bottom: 20px;
 }
@@ -57,6 +70,11 @@ footer {
   text-align: center;
   color: white;
   padding: 20px 0;
+}
+
+#view p {
+  text-align: justify;
+  margin-top: 20px;
 }
 
 #main_menu {
@@ -100,4 +118,12 @@ footer {
 .testimonials {
   color: white;
   text-align: right;
+}
+
+.more_about.item {
+  clear: both;
+  margin-left: 360px;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
 }

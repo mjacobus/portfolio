@@ -1,11 +1,43 @@
-<h1>About me</h1>
+<% simple_menu.active = :about %>
+<% breadcrumb.add "Sobre" %>
 
-<p>Olá. Eu sou o Marcelo. Sou desenvolvedor web. Tenho mais de 5 anos de
-    experiência na área. Me interesso em escrever código de qualidade,
-    utilizando tecnologias de ponta bem como metodos ágeis.
+<h1>Sobre Mim</h1>
+
+<p>
+  Olá. Eu sou o Marcelo. Sou desenvolvedor web. Tenho mais de 5 anos de
+  experiência na área. Me interesso em escrever código de qualidade,
+  utilizando tecnologias de ponta bem como metodos ágeis.
+  <%= link_to('Veja as ferramentas/conecitos que venho usando ao longo dos anos', portfolio_technologies_path) %>.
+  Me coloco a disposição para fazer o seu site, blog, e-commerce (não me peça para fazer um e-commerce).
+</p>
+
+<p>
+  Não me contrate para fazer um <q>sitizinho bem simples</q>, pois se vocẽ
+  está me contratando é porque você provavelmente não sabe como se faz um.
+  Vocẽ não diz para o seu cirurgião plástico:
+  <q>
+    Doutor, eu quero uma cirurgiazinha bem simples.É só uma liposinha.
+    O senhor só tem que colocar uma aspiradorzinho na minha barriga e sugar este excessinho.
+  </q>
+</p>
+
+<p>
+  Sou <a href="http://www.pamelajacobus.com.br">casado</a>, moro em Novo Hamburgo,
+  Rio Grande do Sul. Já morei em Porto Alegre e em Dongguang (东莞) na China. Sou Testemunha de Jeová.
+  Gosto de falar sobre tecnologia, programação, Bíblia e religiões (sempre respeitosamente, com o objetivo de edificar).
+</p>
+
+<p>
+  Gosto de comédia, sou bem humorado e aprecio o sarcasmo como forma de humor. O ruim de ser sarcástico é que quando
+  as pessoas não se dão conta de que se está sendo sarcástico, o sarcástico fica parecendo um idiota.
 </p>
 
 
-
-
-
+<div class="more_about item">
+  <h2>Saiba Mais</h2>
+  <ul>
+    <li>Para saber mais sobre os trabalhos que faço, clique <%= link_to('aqui', '#portfolio') %>.</li>
+    <li>Para saber mais sobre as ferramentas que uso, clique <%= link_to('aqui', portfolio_technologies_path) %>.</li>
+    <li>Para saber mais sobre as minhas crenças, clique <%= link_to('aqui', 'http://www.jw.org') %>.</li>
+  </ul>
+</div>

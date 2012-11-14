@@ -11,8 +11,7 @@
 <body>
     <header>
       <nav id="main_menu">
-        <% simple_menu.add(:home, 'Home', '/') %>
-        <% simple_menu.add(:about, 'Sobre Mim', static_path('about-me')) %>
+        <% simple_menu.add(:about, 'Sobre Mim', static_path('about')) %>
         <% simple_menu.add(:portfolio, 'Meus Trabalhos', static_path('portfolio')) %>
         <% simple_menu.add(:technologies, 'Tecnologias', portfolio_technologies_path) %>
         <%= raw simple_menu %>
@@ -34,7 +33,7 @@
     </header>
     
     <div id="breadcrumb">
-      <% breadcrumb.prepend('Home', root_url) %>
+      <% breadcrumb.prepend('Marcelo Jacobus', root_url) %>
       <%= raw breadcrumb %>
     </div>
   
