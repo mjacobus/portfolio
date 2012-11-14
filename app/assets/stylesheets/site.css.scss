@@ -1,0 +1,103 @@
+@import "bourbon";
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #F2F0E9;
+  color: #434343;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Ubuntu',sans-serif;
+  color: #03406A;
+}
+
+quotes, q {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 36px;
+  text-shadow: 0 0 2px #CCCCCC;
+  margin-bottom: 20px;
+}
+
+header {
+  .owner {
+    color: white;
+    font-family: fantasy;
+    font-size: 20px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: -40px;
+    padding: 10px;
+  }
+  
+  width: 100%;
+  @include background-image(linear-gradient(#36739E 0%, #03406A 50%, transparent 50%));
+  margin: 0 auto;
+  float: left;
+  height: 390px;
+  margin-bottom: -150px;
+}
+
+ #view, #breadcrumb,#main_menu ul, header .testimonials {
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  clear: both;
+}
+
+footer {
+  background: #222021;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+
+#main_menu {
+  width: 100%;
+  background: black;
+  height: 40px;
+  
+  ul {
+    float: right;
+  }
+  
+  li.active a {
+    background: #434343;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  li a:hover {
+    text-decoration: underline
+  }
+  
+  li a {
+    font-family: museo-sans-1,museo-sans-2,sans-serif;
+    float: left;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    padding: 0 10px;
+    text-decoration: none;
+  }
+}
+
+#breadcrumb {
+  position: relative;
+  background-color: #E6E2D5;  
+  a {
+    color: darkRed;
+  }
+}
+
+.testimonials {
+  color: white;
+  text-align: right;
+}
