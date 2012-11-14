@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : "Marcelo Jacobus"%></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+<body>
+    <header>
+      <nav id="main_menu">
+        <% simple_menu.add(:home, 'Home', '/') %>
+        <% simple_menu.add(:about, 'Sobre Mim', static_path('about-me')) %>
+        <% simple_menu.add(:portfolio, 'Meus Trabalhos', static_path('portfolio')) %>
+        <% simple_menu.add(:technologies, 'Tecnologias', portfolio_technologies_path) %>
+        <%= raw simple_menu %>
+      </nav>
+    </header>
+    
+    <div id="breadcrumb">
+      <% breadcrumb.prepend('Home', root_url) %>
+      <%= raw breadcrumb %>
+    </div>
+  
+    <div id="view"><%= yield %></div>
+  
+    <footer>
+      <address>
+        Novo Hamburgo - Rio Grande do Sul <br/>
+        <script type="text/javascript">
+          document.write("marcelo.jacobus@gmail.com<br/>");
+          document.write("(51) 9818-7310")
+        </script>
+      </address>
+    </footer>
+  </body>
+</html>
