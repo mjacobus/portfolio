@@ -33,6 +33,7 @@ gem 'formtastic'
 gem 'flutie'
 gem 'bourbon'
 gem 'airbrake'
+gem 'high_voltage'
 
 group :development do
   gem 'foreman'
