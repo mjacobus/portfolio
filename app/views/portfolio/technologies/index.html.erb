@@ -7,95 +7,15 @@
 
 <div class="half_width">
   <div class="technologies">
-    <div class="item">
-      <div class="title">Ruby on Rails</div>
-      <div class="date">1+ anos</div>
-      <div class="description">
-        <q>Feliz é o homem que trabalha com Ruby on Rails.</q>
-        <small>Eu 5:5</small>
-        <div>Veja <a href="http://plentz.org/2011/04/19/ruby-on-rails/">este artigo</a>,
-        escrito pelo Diego Plentz. Saiba o porque podemos confiar na declaração acima.</div>
+    <% @technologies.each do |technology| %>
+      <div class="item">
+        <div class="title"><%= technology.name %></div>
+        <div class="date"><%= time_ago_in_words(technology.started_at) %></div>
+        <% if technology.website %>
+          <div class="website"><label>Website: </label><%= link_to(technology.website, technology.website) %></div>
+        <% end %>
+        <div class="description"><%= simple_format(technology.description) %></div>
       </div>
-    </div>
-    
-    <div class="item">
-      <div class="title">PHP</div>
-      <div class="date">5+ anos</div>
-      <div class="description">
-        Tem a maior fatia do mercado em sites e blogs.
-        Maduro, fácil de aprender e por isto muitas vezes mal usado.
-      </div>
-    </div>
-    
-    <div class="item">
-      <div class="title">Zend Framework</div>
-      <div class="date">4+ anos</div>
-      <div class="description">
-        Framework MVC. Duzias de excelentes componentes. Excelente arquitetura.
-        Aprendi bastante deste framework, tanto em matéria de arquitetura como
-        de padrão de código.
-      </div>
-    </div>
-    
-    <div class="item">
-      <div class="title">Doctrine PHP (1.2)</div>
-      <div class="date">4+ anos</div>
-      <div class="description">
-        Frameork ORM (Object Relational Mapping), padrão Active Record.
-        Código limpo. Banco de dados com interface orientada a objetos e uma
-        linguagem especifica de consultas, o DQL (Doctrine Query Language).
-      </div>
-    </div>
-    
-    <div class="item">
-      <div class="title">PHPUnit</div>
-      <div class="date">1 ano</div>
-      <div class="description">
-        Excelente framework para Test Driven Design (TDD) em PHP. O seu uso ajuda
-        o programador a escrever código testavel, o que resulta em um melhor
-        design (arquitetura).
-      </div>
-    </div>
-    
-    <div class="item">
-      <div class="title">jQuery</div>
-      <div class="date">4+ anos</div>
-      <div class="description">
-        Dispensa comentários. Conhecido por 99% dos desenvolvedores web.
-      </div>
-    </div>
-    
-    <div class="item">
-      <div class="title">CSS</div>
-      <div class="date">2+ anos</div>
-      <div class="description">
-        Estou evoluindo aos poucos nesta área.
-      </div>
-    </div>
-    
-    <div class="item">
-      <div class="title">Git</div>
-      <div class="date">2+ anos</div>
-      <div class="description">
-        O melhor SCM (gerenciador de código fonte) que existe. SVN? Pfff. Source Safe? Pfffffffff.
-      </div>
-    </div>
-    
-    <div class="item">
-      <div class="title">Linux</div>
-      <div class="date">7+ anos</div>
-      <div class="description">
-        Tenho experiência em administrar servidores linux. Apache, Samba, FTP, Rede.
-        Melhor para servidores, muito melhor para desktop: Slackware, Ubuntu e agora Linux Mint.
-      </div>
-    </div>
-    
-    <div class="item">
-      <div class="title">Capistrano</div>
-      <div class="date">1- ano</div>
-      <div class="description">
-        Faça o deploy de forma elegante e segura.
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
