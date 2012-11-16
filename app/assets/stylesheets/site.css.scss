@@ -17,6 +17,10 @@ h1,h2,h3,h4,h5,h6 {
   color: #03406A;
 }
 
+label {
+  font-weight: bold;
+}
+
 quotes, q {
   font-style: italic;
 }
@@ -127,3 +131,43 @@ footer {
   position: relative;
   width: 400px;
 }
+
+.half_width {
+  width: 50%;
+}
+
+.item {
+  margin:20px auto 0 auto;
+  width: 95%;
+  background-color: #F5F5F5;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+  margin-bottom: 20px;
+  min-height: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-shadow: 0 0 2px #CCCCCC;
+  width: 278px;
+  color: #03406A;
+}
+
+.title, .date {
+  float: left;
+  height: 25px;
+}
+
+.date {
+  width: 100px;
+  text-align: right;
+}
+
+.description {
+  text-align: justify;
+}
+

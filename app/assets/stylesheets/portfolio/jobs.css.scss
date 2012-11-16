@@ -1,3 +1,19 @@
-// Place all the styles related to the portfolio/jobs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.jobs {
+  .title {
+    width: 580px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    min-width: 90px;
+    float: left;
+  }
+}
+
+.print {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ddd;
+  float: left;
+  margin: 0 20px 0 0;
+}

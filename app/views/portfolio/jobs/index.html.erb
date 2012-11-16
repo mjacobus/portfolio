@@ -1,2 +1,35 @@
-<h1>Portfolio::Jobs#index</h1>
-<p>Find me in app/views/portfolio/jobs/index.html.erb</p>
+<% simple_menu.active = :jobs %>
+<% breadcrumb.add "Meus Trabalhos" %>
+
+<h1>Meus Trabalhos</h1>
+
+<p>Alguns dos trabalhos que realizei:</p>
+
+<div class="jobs">
+  <% @jobs.each do |job| %>
+    <div class="item">
+      
+      <div class="print"></div>
+      
+      <div class="title"><%= job.title %></div>
+      
+      <div class="url">
+        <label>Veja online:</label>
+        <%= link_to(job.url, job.url, target: :_blank) %>
+      </div>
+      
+      <% if job.company %>
+      <div class="company">
+        <label>Empresa:</label>
+        <% if job.company_website %>
+          <%= link_to(job.company, job.company_website, target: :_blank) %>
+        <% else %>
+          <%= job.company %>
+        <% end %>
+      </div>
+      <% end %>
+      
+      <div class="description"><%= raw simple_format(job.description) %></div>
+    </div>
+  <% end %>
+</div>

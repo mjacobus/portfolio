@@ -7,6 +7,10 @@ describe Portfolio::JobsController do
     subject { response }
     
     its(:status) { should eq(200) }
+    
+    it "should assign @jobs" do
+      Job.should have_received(:all)
+    end
   end
 
   describe "GET 'show'" do
@@ -14,6 +18,8 @@ describe Portfolio::JobsController do
     subject { response }
     
     its(:status) { should eq(200) }
+    
+    it "should find job by slug"
   end
 
 end
