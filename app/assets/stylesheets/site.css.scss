@@ -178,3 +178,19 @@ footer {
   text-align: justify;
 }
 
+#notes{
+  font-size: 12px;
+  abbr {
+    color: #03406A;
+  }
+  p {
+    margin: 10px;
+  }
+}
+
+a.note {
+  font-size: 10px;
+  margin-top: -5px;
+  line-height: 15px;
+  text-decoration: none;
+}
