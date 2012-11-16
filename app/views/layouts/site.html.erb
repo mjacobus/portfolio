@@ -12,7 +12,7 @@
     <header>
       <nav id="main_menu">
         <% simple_menu.add(:about, 'Sobre Mim', static_path('about')) %>
-        <% simple_menu.add(:portfolio, 'Meus Trabalhos', static_path('portfolio')) %>
+        <% simple_menu.add(:portfolio, 'Meus Trabalhos', portfolio_jobs_path %>
         <% simple_menu.add(:technologies, 'Tecnologias', portfolio_technologies_path) %>
         <%= raw simple_menu %>
       </nav>
