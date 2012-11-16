@@ -52,7 +52,7 @@ group :test do
   gem 'capybara'
   # gem 'capybara-webkit'
   gem 'factory_girl_rails'
-  gem 'bourne'
+  gem "bourne", :require => false
   gem 'database_cleaner'
   gem 'timecop'
   gem 'shoulda-matchers'
