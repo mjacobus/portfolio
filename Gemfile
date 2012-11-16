@@ -45,6 +45,7 @@ group :development, :test do
   # gem 'guard-spork'
   gem 'rspec-rails'
   gem 'sham_rack'
+  gem 'rb-inotify', '~> 0.8.8'
 end
 
 group :test do
