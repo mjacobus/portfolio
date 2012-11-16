@@ -10,9 +10,15 @@
     <% @technologies.each do |technology| %>
       <div class="item">
         <div class="title"><%= technology.name %></div>
-        <div class="date"><%= time_ago_in_words(technology.started_at) %></div>
+        <div class="experience">
+          <label>Experiência:</label>
+          <%= time_ago_in_words(technology.started_at) %>
+        </div>
         <% if technology.website %>
-          <div class="website"><label>Website: </label><%= link_to(technology.website, technology.website) %></div>
+          <div class="website">
+            <label>Website: </label>
+            <%= link_to(technology.website, technology.website) %>
+          </div>
         <% end %>
         <div class="description"><%= simple_format(technology.description) %></div>
       </div>

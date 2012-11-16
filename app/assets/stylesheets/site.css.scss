@@ -19,6 +19,8 @@ h1,h2,h3,h4,h5,h6 {
 
 label {
   font-weight: bold;
+  min-width: 90px;
+  float: left;
 }
 
 quotes, q {
@@ -46,7 +48,7 @@ h2 {
 header {
   .owner {
     color: white;
-    font-family: fantasy;
+    font-family: Verdana;
     font-size: 20px;
     width: 800px;
     margin: 0 auto;
@@ -67,6 +69,11 @@ header {
   margin: 0 auto;
   padding: 10px;
   clear: both;
+}
+
+#main_menu ul {
+  width: 400px;
+  float: right;
 }
 
 footer {
@@ -153,13 +160,13 @@ footer {
   font-weight: 700;
   line-height: 20px;
   text-shadow: 0 0 2px #CCCCCC;
-  width: 278px;
+  width: 100%;
   color: #03406A;
 }
 
-.title, .date {
-  float: left;
-  height: 25px;
+.title {
+  margin-bottom: 20px;
+  height: 10px;
 }
 
 .date {
