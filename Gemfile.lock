@@ -1,12 +1,12 @@
 GIT
-  remote: git@github.com:mjacobus/Breadcrumb.git
+  remote: git://github.com/mjacobus/Breadcrumb.git
   revision: 22fd17941188f0a51348710271e3a584a23601da
   specs:
     breadcrumb (0.0.1)
       rails (~> 3.2.8)
 
 GIT
-  remote: git@github.com:mjacobus/active_admin.git
+  remote: git://github.com/mjacobus/active_admin.git
   revision: 4591105cb666c24383d4849dd94053f6b8164224
   specs:
     activeadmin (0.5.0)
@@ -23,7 +23,7 @@ GIT
       sass (>= 3.1.0)
 
 GIT
-  remote: git@github.com:mjacobus/simple_menu.git
+  remote: git://github.com/mjacobus/simple_menu.git
   revision: f6f202149b980316c554e008f0b8dcad728b1057
   specs:
     simple_menu (0.0.1)
